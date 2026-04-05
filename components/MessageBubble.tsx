@@ -53,7 +53,7 @@ export default function MessageBubble({
       </div>
 
       {/* Bubble */}
-      <div className={`max-w-[70%] ${isOwn ? "items-end" : "items-start"} flex flex-col`}>
+      <div className={`max-w-[70%] ${isOwn ? "items-end" : "items-start"} flex flex-col`} style={{marginTop:"0.4rem",marginBottom:"0.4rem"}}>
         {showSenderName && !isOwn && sender && (
           <span className="text-xs text-slate-400 mb-1 ml-1">
             {sender.name}
